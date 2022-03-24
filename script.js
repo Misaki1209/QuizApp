@@ -85,28 +85,39 @@ const questions = [
     ]
   },
   {
-    question: 'Who is the best YouTuber?',
+    question: 'Who is the best football player?',
     answers: [
-      { text: 'Web Dev Simplified', correct: true },
-      { text: 'Traversy Media', correct: true },
-      { text: 'Dev Ed', correct: true },
-      { text: 'Fun Fun Function', correct: true }
+      { text: 'Leo Messi', correct: true },
+      { text: 'Lionel Messi', correct: true },
+      { text: 'La Pulga', correct: true },
+      { text: 'M10', correct: true }
     ]
   },
   {
-    question: 'Is web development fun?',
+    question: 'What does "ありがとうございます" mean?',
     answers: [
-      { text: 'Kinda', correct: false },
-      { text: 'YES!!!', correct: true },
-      { text: 'Um no', correct: false },
-      { text: 'IDK', correct: false }
+      { text: 'Thank you!', correct: true },
+      { text: 'Fuck you!', correct: false },
+      { text: 'Hello!', correct: false },
+      { text: "What's up?", correct: false }
     ]
   },
   {
-    question: 'What is 4 * 2?',
+    question: 'How many months have 28 days in them?',
     answers: [
-      { text: '6', correct: false },
-      { text: '8', correct: true }
+      { text: '12', correct: false },
+      { text: '10', correct: false },
+      { text: '11', correct: false },
+      { text: '13', correct: true }
+    ]
+  },
+  {
+    question: 'Which country do kiwifruit originate from?',
+    answers: [
+      { text: 'USA', correct: false },
+      { text: 'New Zealand', correct: false },
+      { text: 'China', correct: true },
+      { text: 'Brazil', correct: false }
     ]
   }
 ]
