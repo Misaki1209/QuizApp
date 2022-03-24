@@ -112,12 +112,21 @@ const questions = [
     ]
   },
   {
-    question: 'Which country do kiwifruit originate from?',
+    question: 'Which country do kiwi fruit originate from?',
     answers: [
       { text: 'USA', correct: false },
       { text: 'New Zealand', correct: false },
       { text: 'China', correct: true },
       { text: 'Brazil', correct: false }
+    ]
+  },
+  {
+    question: 'Which sea creature has three hearts?',
+    answers: [
+      { text: 'Shark', correct: false },
+      { text: 'Shrimp', correct: false },
+      { text: 'Octopus', correct: true },
+      { text: 'Jelly Fish', correct: false }
     ]
   }
 ]
