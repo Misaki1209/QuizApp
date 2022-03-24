@@ -1,6 +1,7 @@
 *, *::before, *::after {
   box-sizing: border-box;
   font-family: Gotham Rounded;
+  font-size: 1.5rem;
 }
 
 :root {
@@ -21,6 +22,7 @@ body {
   background-color: hsl(var(--hue), 100%, 20%);
 }
 
+
 body.correct {
   --hue: var(--hue-correct);
 }
@@ -29,12 +31,16 @@ body.wrong {
   --hue: var(--hue-wrong);
 }
 
+.score{
+  padding: 0px 0px 0px 80px;
+}
+
 .container {
-  width: 800px;
+  width: 1500px;
   max-width: 80%;
   background-color: white;
   border-radius: 5px;
-  padding: 10px;
+  padding: 50px 10px 50px 10px;
   box-shadow: 0 0 10px 2px;
 }
 
@@ -50,7 +56,7 @@ body.wrong {
   border: 1px solid hsl(var(--hue), 100%, 30%);
   background-color: hsl(var(--hue), 100%, 50%);
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 10px 10px 10px 10px;
   color: white;
   outline: none;
 }
@@ -71,7 +77,7 @@ body.wrong {
 .start-btn, .next-btn {
   font-size: 1.5rem;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 10px 10px;
 }
 
 .controls {
@@ -82,4 +88,5 @@ body.wrong {
 
 .hide {
   display: none;
+
 }

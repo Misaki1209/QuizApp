@@ -4,7 +4,7 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
-let shuffledQuestions, currentQuestionIndex
+let shuffledQuestions, currentQuestionIndex, Score
 
 startButton.addEventListener('click', startGame)
 nextButton.addEventListener('click', () => {
@@ -28,6 +28,7 @@ function setNextQuestion() {
 function showQuestion(question) {
   questionElement.innerText = question.question
   question.answers.forEach(answer => {
+
     const button = document.createElement('button')
     button.innerText = answer.text
     button.classList.add('btn')
@@ -127,6 +128,42 @@ const questions = [
       { text: 'Shrimp', correct: false },
       { text: 'Octopus', correct: true },
       { text: 'Jelly Fish', correct: false }
+    ]
+  },
+  {
+    question: 'How long is an Olympic swimming pool (in meters)?',
+    answers: [
+      { text: '40', correct: false },
+      { text: '50', correct: true },
+      { text: '60', correct: false },
+      { text: '100', correct: false }
+    ]
+  },
+  {
+    question: 'How many languages are written from right to left',
+    answers: [
+      { text: '11', correct: false },
+      { text: '9', correct: false },
+      { text: '12', correct: true },
+      { text: '10', correct: false }
+    ]
+  },
+  {
+    question: 'What was the first soft drink in space?',
+    answers: [
+      { text: 'Fanta', correct: false },
+      { text: 'Pepsi', correct: false },
+      { text: '7-ups', correct: false },
+      { text: 'Coca-cola', correct: true }
+    ]
+  },
+  {
+    question: 'Dump, floater, and wipe are terms used in which team sport?',
+    answers: [
+      { text: 'Football', correct: false },
+      { text: 'Volleyball', correct: true },
+      { text: 'Basketball', correct: false },
+      { text: 'Tennis', correct: false }
     ]
   }
 ]
